@@ -1,0 +1,11 @@
+blog_platform/
+├── app.rb
+├── models/
+│   ├── user.rb
+│   ├── post.rb
+│   ├── comment.rb
+│   ├── database.rb
+└── views/
+    ├── home_view.rb
+    ├── post_view.rb
+    └── user_view.rb
