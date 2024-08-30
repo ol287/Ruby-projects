@@ -1,0 +1,19 @@
+ecommerce_platform/
+├── app.rb
+├── models/
+│   ├── product.rb
+│   ├── user.rb
+│   ├── cart.rb
+│   ├── order.rb
+│   ├── database.rb
+├── views/
+│   ├── layout.erb
+│   ├── index.erb
+│   ├── product.erb
+│   ├── cart.erb
+│   ├── order.erb
+└── public/
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── script.js

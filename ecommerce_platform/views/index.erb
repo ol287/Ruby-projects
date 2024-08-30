@@ -1,0 +1,17 @@
+<!-- views/index.erb -->
+<% @products.each do |product| %>
+    <div class="product">
+        <h2><a href="/product/<%= product.id %>"><%= product.name %></a></h2>
+        <p><%= product.description %></p>
+        <p>Price: $<%= product.price %></p>
+        <% if product.in_stock? %>
+            <form action="/cart/add/<%= product.id %>" method="POST">
+                <button type="submit" class="add-to-cart" data-product-name="<%= product.name %>">Add to Cart</button>
+            </form>
+        <% else %>
+            <p>Out of stock</p>
+        <% end %>
+    </div>
+<% end %>
+
+
